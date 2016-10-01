@@ -39,5 +39,4 @@ source 'https://rubygems.org'
 
  gem 'web-console', group: :development
  gem 'active_model_serializers', '0.9.2'
-
- 
+ gem 'haml'
