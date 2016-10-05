@@ -1,0 +1,27 @@
+
+<h1>Start A New Registration</h1>
+
+<div class="row">
+  <div class="col-md-4">
+    <p>Guidelines for Registing Your Apllication</p>
+    <ul>
+      <li>Your Registration must have a site name.</li>
+      <li>Each Registration must have a unique URL.</li>
+    </ul>
+  </div>
+  <div class="col-md-8">
+    <%= form_for @registered_application do |f| %>
+      <div class="form-group">
+        <%= f.label :name %>
+        <%= f.text_field :name, class: 'form-control', placeholder: "Enter the new name to be registered" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :URL  %>
+        <%= f.text_field :url, class: 'form-control', placeholder: "Enter the new URL" %>
+      </div>
+      <div class="form-group">
+        <%= f.submit "Save", class: 'btn btn-success' %>
+      </div>
+    <% end %>
+  </div>
+</div>
