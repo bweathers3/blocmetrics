@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :registered_application do
-    name "MyString"
-    url "MyString"
-    user_id 1
+    name { Faker::Company.name }
+    url { Faker::Internet.url }
+    user nil
   end
 end
